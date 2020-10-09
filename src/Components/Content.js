@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
 import {ItemTypes} from './ItemTypes'
 import { useDrop } from 'react-dnd';
-import LineChart from './Charts/LineChart';
-import BarChart from './Charts/BarChart';
-import PieChart from './Charts/PieChart';
+import LineChart from '../Charts/LineChart';
+import BarChart from '../Charts/BarChart';
+import PieChart from '../Charts/PieChart';
 
 const Content=(props)=>{
     const [row,setRow]=useState([])

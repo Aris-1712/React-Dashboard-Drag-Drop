@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDrag } from 'react-dnd';
-import {ItemTypes} from '../ItemTypes'
+import {ItemTypes} from '../Components/ItemTypes'
 import Bar from '../Images/bar.jpg'
 const BarCard=(props)=>{
     const [{ isDragging }, drag] = useDrag({

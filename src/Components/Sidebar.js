@@ -1,8 +1,8 @@
 import React from 'react'
 
-import BarCard from './Cards/BarCard'
-import LineCard from './Cards/LineCard'
-import PieCard from './Cards/PieCard'
+import BarCard from '../Cards/BarCard'
+import LineCard from '../Cards/LineCard'
+import PieCard from '../Cards/PieCard'
 
 
 const Sidebar=(props)=>{

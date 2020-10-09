@@ -1,6 +1,6 @@
 import React from 'react'
 import { useDrag } from 'react-dnd';
-import {ItemTypes} from '../ItemTypes'
+import {ItemTypes} from '../Components/ItemTypes'
 import Line from '../Images/Line.png'
 const LineCard=(props)=>{
     const [{ isDragging }, drag] = useDrag({
