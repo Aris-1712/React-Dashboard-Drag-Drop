@@ -25,10 +25,10 @@ const data = {
 const PieChart=(props)=>{
     
     return (
-      <div style={{backgroundColor:"white"}}>
+    //   <div style={{backgroundColor:"white"}}>
         
-        <Pie data={data} height={250} options={{maintainAspectRatio: false}} />
-      </div>
+        <Pie data={data}  options={{maintainAspectRatio: false}} />
+    //   </div>
     );
   }
 

@@ -20,17 +20,17 @@ const data = {
 const BarChart=(props)=>{
    
     return (
-      <div style={{backgroundColor:"white"}}>
+      
      
         <Bar
           data={data}
          
-          height={250}
+         
           options={{
             maintainAspectRatio: false
           }}
         />
-      </div>
+     
     );
   }
 export default BarChart

@@ -1,10 +1,11 @@
-import React from 'react';
+import { helpers } from 'chart.js';
+import React, { useEffect, useState } from 'react';
 import {Line} from 'react-chartjs-2';
 
 
 
 const LineChart=(props)=>{
- 
+
     const data = {
         labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
         datasets: [
@@ -33,10 +34,10 @@ const LineChart=(props)=>{
       };
 
     return (
-      <div   style={{backgroundColor:"white",}}>
+      
         
-        <Line height={250} data={data} options={{maintainAspectRatio: false}} /> 
-      </div>
+        <Line  data={data} options={{maintainAspectRatio: false}} /> 
+      
     );
   }
 

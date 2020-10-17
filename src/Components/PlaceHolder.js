@@ -21,7 +21,10 @@ const PlaceHolder=(props)=>{
             <div style={{flex:1,margin:10}}>
                 <div style={{display:"flex",justifyContent:"space-between",alignItems:"center"}}>
                     <h3>My Dashboard</h3>
-                    <button onClick={save} style={{padding:10,backgroundColor:"black",color:"white",outline:"none",border:"none",cursor:"pointer"}}>SAVE</button>
+                    <div style={{display:"flex",justifyContent:"space-between",width:200}}>
+                    <button onClick={save} style={{padding:20,backgroundColor:"black",color:"white",outline:"none",border:"none",cursor:"pointer"}}>SAVE</button>
+                    <button  style={{padding:20,backgroundColor:"#84DD63",outline:"none",border:"none",cursor:"pointer"}} onClick={()=>{setRowCount(rowCount+1)}} >ADD ROW</button>
+                    </div>
                 </div>
                 <div style={{display:"flex",flexDirection:"column"}}>
                     {[...Array(rowCount)].map((_,index)=>{
@@ -31,7 +34,7 @@ const PlaceHolder=(props)=>{
                             </div>
                         )
                     })}
-                <button  style={{padding:20,backgroundColor:"#84DD63",outline:"none",border:"none",cursor:"pointer"}} onClick={()=>{setRowCount(rowCount+1)}} >ADD ROW</button>
+                
                 </div>
                 
             </div>
