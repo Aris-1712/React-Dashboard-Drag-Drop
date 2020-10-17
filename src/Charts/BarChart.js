@@ -1,6 +1,6 @@
 
 import React from 'react';
-import {Bar} from 'react-chartjs-2';
+import { Bar } from 'react-chartjs-2';
 
 const data = {
   labels: ['January', 'February', 'March', 'April', 'May', 'June', 'July'],
@@ -17,20 +17,20 @@ const data = {
   ]
 };
 
-const BarChart=(props)=>{
-   
-    return (
-      
-     
-        <Bar
-          data={data}
-         
-         
-          options={{
-            maintainAspectRatio: false
-          }}
-        />
-     
-    );
-  }
+const BarChart = (props) => {
+
+  return (
+
+
+    <Bar
+      data={data}
+
+
+      options={{
+        maintainAspectRatio: false
+      }}
+    />
+
+  );
+}
 export default BarChart
